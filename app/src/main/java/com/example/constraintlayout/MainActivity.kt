@@ -39,7 +39,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
-
+/** need to add this implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1") to dependencies{ }
+ */
 @Composable
 fun ConstraintLayoutExample() {
     ConstraintLayout {
@@ -61,13 +62,5 @@ fun ConstraintLayoutExample() {
                 end.linkTo(button.end, margin = 16.dp)
             }
         )
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ConstraintLayoutTheme {
-        ConstraintLayoutExample()
     }
 }
